@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Text Editor</title>
+    <!-- font wassam cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="grand_parant">
+        <h1 class="heading_text"> My Text Editor</h1>
+        <div class="parant">
+            <div class="editor_feild">
+                <div>
+                    <i id="textBold" class="fa-solid fa-bold"></i>
+                    <i onclick="fItalic()" id="fontItalic" class=" fa-solid fa-italic"></i>
+                    <i id="underLine" class="fa-solid fa-underline"></i>
+                </div>
+                <div>
+                    <i onclick="alignRight()" class="fa-solid fa-align-right"></i>
+                    <i onclick="alignLeft()" class="fa-solid fa-align-left"></i>
+                    <i onclick="alignJustyfy()"  class="fa-solid fa-align-justify"></i>
+                    <i onclick="alignCenter()"class="fa-solid fa-align-center"></i>
+                </div>
+                <div>  
+                    <input id="fontSize" type="number" value="20">                     
+                    <input id="color" type="color">
+                </div>
+            </div>
+            <hr class="line"/>            
+            <textarea  name="" id="textarea1"></textarea>                       
+        </div>
+    </div>
+    
+   
+    <script src="./script.js"></script>
+</body>
+</html>
